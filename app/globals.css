@@ -1,0 +1,628 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MadeByNavie Brand Typography */
+.text-display-2xl {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.text-display-xl {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.text-display-lg {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+.text-display-md {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.text-display-sm {
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.text-body-xl {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+
+.text-body-md {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.text-body-sm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.text-caption {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* MadeByNavie Brand Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navie-gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes navie-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes navie-pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15), 0 0 40px rgba(20, 184, 166, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.25), 0 0 80px rgba(20, 184, 166, 0.15);
+  }
+}
+
+/* MadeByNavie Brand Animation Classes */
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-navie-gradient {
+  animation: navie-gradient-shift 8s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-navie-float {
+  animation: navie-float 6s ease-in-out infinite;
+}
+
+.animate-navie-glow {
+  animation: navie-pulse-glow 4s ease-in-out infinite;
+}
+
+/* MadeByNavie Brand Gradients - Accessibility Enhanced */
+.gradient-navie-primary {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.gradient-navie-secondary {
+  background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+}
+
+.gradient-navie-accent {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.gradient-navie-hero {
+  background: linear-gradient(135deg, #1e293b 0%, #a855f7 50%, #0891b2 100%);
+}
+
+.gradient-navie-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-navie-text-alt {
+  background: linear-gradient(135deg, #1e293b 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* MadeByNavie Professional Transitions */
+.transition-navie {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-navie-fast {
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-navie-slow {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* MadeByNavie Hover Effects */
+.hover-navie-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-navie-lift:hover {
+  transform: translateY(-8px);
+}
+
+.hover-navie-scale {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-navie-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-navie-glow {
+  transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-navie-glow:hover {
+  box-shadow: 0 20px 40px -12px rgba(168, 85, 247, 0.25), 0 0 40px rgba(8, 145, 178, 0.15);
+}
+
+/* MadeByNavie Glass Effects */
+.glass-navie {
+  background: rgba(245, 248, 250, 0.65); /* blue-tinted glass for light mode */
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(96, 165, 250, 0.12); /* subtle blue border */
+}
+
+.glass-navie-alt {
+  background: rgba(96, 165, 250, 0.08); /* very light blue glass */
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(139, 92, 246, 0.10); /* subtle purple border */
+}
+
+/* MadeByNavie Button System - Accessibility Enhanced */
+.btn-navie-primary {
+  background: linear-gradient(135deg, #60a5fa 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px 0 rgba(96, 165, 250, 0.10);
+}
+
+.btn-navie-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px 0 rgba(139, 92, 246, 0.15);
+  background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+}
+
+.btn-navie-primary:focus {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+.btn-navie-secondary {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px 0 rgba(8, 145, 178, 0.25);
+}
+
+.btn-navie-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(8, 145, 178, 0.35);
+}
+
+.btn-navie-secondary:focus {
+  outline: 2px solid #0891b2;
+  outline-offset: 2px;
+}
+
+.btn-navie-outline {
+  background: transparent;
+  color: hsl(var(--foreground));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(10px);
+}
+
+.btn-navie-outline:hover {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-navie-outline:focus {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+/* MadeByNavie Card System */
+.card-navie {
+  background: hsl(var(--card));
+  border: 1px solid rgba(168, 85, 247, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-navie:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(168, 85, 247, 0.1), 0 10px 10px -5px rgba(8, 145, 178, 0.05);
+  border-color: rgba(168, 85, 247, 0.2);
+}
+
+.card-navie-glass {
+  background: rgba(30, 41, 59, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.1);
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-navie-glass:hover {
+  background: rgba(220, 220, 245, 0.08);
+  border-color: rgba(139, 92, 246, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(139, 92, 246, 0.10), 0 0 48px rgba(96, 165, 250, 0.08);
+}
+
+@layer base {
+  :root {
+    /* Professional Color Scheme with Golden Ratio Design Principles - Dark Theme */
+    --background: 222 84% 4%;                    /* Deep navy background */
+    --foreground: 210 40% 98%;                  /* Light text */
+    --card: 222 84% 5%;                         /* Slightly lighter navy */
+    --card-foreground: 210 40% 98%;            /* Light text */
+    --popover: 222 84% 5%;                      /* Slightly lighter navy */
+    --popover-foreground: 210 40% 98%;         /* Light text */
+    --primary: 187 100% 42%;                   /* Professional cyan */
+    --primary-foreground: 222 84% 4%;          /* Dark text on cyan */
+    --secondary: 262 83% 58%;                  /* Professional purple */
+    --secondary-foreground: 210 40% 98%;       /* Light text */
+    --muted: 215 32% 15%;                      /* Dark muted */
+    --muted-foreground: 217 11% 65%;           /* Light muted text */
+    --accent: 262 83% 58%;                     /* Professional purple */
+    --accent-foreground: 210 40% 98%;          /* Light text */
+    --destructive: 0 84% 60%;                  /* Professional red */
+    --destructive-foreground: 210 40% 98%;     /* Light text */
+    --border: 217 32% 17%;                     /* Dark border */
+    --input: 217 32% 17%;                      /* Dark input */
+    --ring: 187 100% 42%;                      /* Cyan ring */
+    --radius: 0.75rem;
+  }
+
+  .light {
+    /* Modern Professional Light Theme - Section background is slightly dimmed white */
+    --background: 210 20% 99%;                    /* Slightly dimmed white background (#fafbfc) */
+    --foreground: 220 8% 18%;                   /* Deep, mature gray */
+    --card: 36 33% 96%;                         /* Soft off-white card (#f9f6f2) */
+    --card-foreground: 220 8% 18%;              /* Deep, mature gray */
+    --popover: 0 0% 100%;                       /* True white popovers */
+    --popover-foreground: 220 8% 18%;           /* Deep, mature gray */
+    --primary: 220 60% 54%;                     /* Modern blue (less saturated, AA+ compliant) */
+    --primary-foreground: 0 0% 100%;            /* White text on blue */
+    --secondary: 262 40% 90%;                   /* Muted lavender/gray */
+    --secondary-foreground: 220 8% 18%;         /* Deep, mature gray */
+    --muted: 210 20% 98%;                       /* Very light gray background */
+    --muted-foreground: 220 8% 50%;             /* Muted gray */
+    --accent: 173 58% 39%;                      /* Teal accent (modern, accessible) */
+    --accent-foreground: 0 0% 100%;             /* White */
+    --destructive: 0 72% 51%;                   /* Professional red (AA+ compliant) */
+    --destructive-foreground: 0 0% 100%;        /* White */
+    --border: 210 20% 94%;                      /* Subtle very light gray border */
+    --input: 210 20% 92%;                       /* Very light gray input border */
+    --ring: 220 60% 54%;                        /* Blue ring for focus */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-normal transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-optical-sizing: auto;
+  }
+}
+
+/* MadeByNavie Component Styles */
+@layer components {
+  .section-header {
+    @apply text-center mb-20 md:mb-24 lg:mb-32;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 text-balance leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-lg md:text-xl xl:text-2xl max-w-3xl mx-auto text-balance leading-relaxed font-medium;
+  }
+
+  .section-badge {
+    @apply inline-flex items-center px-4 py-2 bg-gradient-to-r from-navie-secondary-500/10 to-navie-accent-500/10 text-navie-secondary-600 dark:text-navie-secondary-400 text-sm font-medium rounded-full border border-navie-secondary-500/20 dark:border-navie-secondary-400/20 mb-8;
+  }
+
+  .content-container {
+    @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .prose-container {
+    @apply max-w-4xl mx-auto;
+  }
+
+  /* Enhanced Section Spacing */
+  .section-spacing {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .section-spacing-compact {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .section-spacing-large {
+    @apply py-32 md:py-40 lg:py-48;
+  }
+
+  /* Enhanced Card Spacing */
+  .card-spacing {
+    @apply p-6 md:p-8 lg:p-10;
+  }
+
+  .card-spacing-compact {
+    @apply p-4 md:p-6;
+  }
+
+  /* Enhanced Grid Spacing */
+  .grid-spacing {
+    @apply gap-8 md:gap-10 lg:gap-12;
+  }
+
+  .grid-spacing-compact {
+    @apply gap-4 md:gap-6;
+  }
+
+  /* Enhanced Margin Utilities */
+  .margin-section {
+    @apply mb-16 md:mb-20 lg:mb-24;
+  }
+
+  .margin-section-large {
+    @apply mb-20 md:mb-24 lg:mb-32;
+  }
+
+  .margin-component {
+    @apply mb-8 md:mb-10 lg:mb-12;
+  }
+
+  .margin-component-large {
+    @apply mb-12 md:mb-16 lg:mb-20;
+  }
+}
+
+/* MadeByNavie Animation Delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-600 {
+  animation-delay: 600ms;
+}
+.delay-700 {
+  animation-delay: 700ms;
+}
+.delay-800 {
+  animation-delay: 800ms;
+}
+
+/* Modern Scrollbar with MadeByNavie Colors - Accessibility Enhanced */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #06b6d4, #a855f7);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0891b2, #9333ea);
+}
+
+/* Professional Selection Colors - Accessibility Enhanced */
+::selection {
+  background: rgba(6, 182, 212, 0.15);
+  color: hsl(var(--foreground));
+}
+
+::-moz-selection {
+  background: rgba(6, 182, 212, 0.15);
+  color: hsl(var(--foreground));
+}
+
+/* Enhanced Focus Styles for Accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .gradient-navie-text {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: hsl(var(--foreground));
+  }
+
+  .card-navie,
+  .card-navie-glass {
+    border-width: 2px;
+    border-color: hsl(var(--border));
+  }
+
+  .btn-navie-primary,
+  .btn-navie-secondary {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .gradient-navie-text {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: black;
+  }
+
+  .card-navie,
+  .card-navie-glass {
+    border: 1px solid black;
+    background: white;
+  }
+}
