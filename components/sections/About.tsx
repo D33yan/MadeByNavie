@@ -28,8 +28,8 @@ export function About({ isMobile, scrollToSection }: AboutProps) {
                 <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 text-cyan-400 dark:text-cyan-300 text-sm font-semibold rounded-full border border-cyan-500/20 dark:border-cyan-400/20">
                   About Me
                 </span>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance leading-tight">
-                  Meet <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">MadeByNavie</span>
+                <h2 className="section-title gradient-navie-text bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl font-bold text-balance leading-tight">
+                  Meet <span>MadeByNavie</span>
                 </h2>
               </div>
               <div className="space-y-6 md:space-y-8">

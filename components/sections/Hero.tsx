@@ -25,7 +25,7 @@ export function Hero({
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden section-spacing-large bg-white dark:bg-[hsl(222,84%,4%)]"
+      className="min-h-screen py-6 flex items-center justify-center relative overflow-hidden bg-white dark:bg-[hsl(222,84%,4%)]"
     >
       {/* Subtle Particle Background Effect */}
       <ParticleSystem className="absolute inset-0 z-0" particleCount={60} />
@@ -62,7 +62,7 @@ export function Hero({
           Frontend Developer
         </h1>
         {/* Tagline with accent font */}
-        <div className="text-center text-lg md:text-2xl text-cyan-700 dark:text-cyan-300 font-medium mb-3 font-display animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <div className="text-center text-lg md:text-2xl text-cyan-700 dark:text-cyan-300 font-medium mb-6 font-display animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           Building beautiful, performant, and modern web experiences.
         </div>
         {/* Summary */}

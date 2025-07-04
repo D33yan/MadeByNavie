@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useRef } from "react"
-import { Send, CheckCircle, AlertCircle, Loader2, User, Mail, MessageSquare, Briefcase, Clock } from "lucide-react"
+import { Send, CheckCircle, AlertCircle, Loader2, User, Mail, MessageSquare, Briefcase, Clock, Github, Linkedin, MessageCircle, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { sendEmail, sendAutoReply, type EmailData } from "@/lib/email"

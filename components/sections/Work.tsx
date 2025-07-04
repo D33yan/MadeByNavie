@@ -82,7 +82,7 @@ export function Work({ isMobile, projects }: WorkProps) {
             <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500/10 to-green-500/10 text-emerald-400 dark:text-emerald-300 text-sm font-semibold rounded-full border border-emerald-500/20 dark:border-emerald-400/20 mb-6">
               Portfolio
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight text-[hsl(var(--foreground))] dark:text-white">
+            <h2 className="section-title gradient-navie-text bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
               Selected Works
             </h2>
             <p className="text-lg md:text-xl text-[hsl(var(--foreground))] dark:text-muted-foreground max-w-3xl mx-auto text-balance leading-relaxed">

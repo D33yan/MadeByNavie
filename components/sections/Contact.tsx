@@ -64,60 +64,57 @@ export function Contact({ isMobile }: ContactProps) {
               mobileAnimation="fade-up"
               className="flex flex-wrap justify-center gap-4 md:gap-6 mb-16 md:mb-20"
             >
-              {[
-                {
-                  name: "WhatsApp",
-                  href: "https://wa.me/2348106890380",
-                  icon: MessageCircle,
-                  color: "emerald",
-                  ariaLabel: "Contact on WhatsApp"
-                },
-                {
-                  name: "Email",
-                  href: "mailto:dnnaji26@gmail.com?subject=Project%20Inquiry&body=Hi%20Divine,%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.",
-                  icon: Mail,
-                  color: "cyan",
-                  ariaLabel: "Send an email"
-                },
-                {
-                  name: "Instagram",
-                  href: "https://www.instagram.com/callmenavie?utm_source=qr&igsh=MTZxdXh6b3doczFuMw==",
-                  icon: Instagram,
-                  color: "pink",
-                  ariaLabel: "Instagram"
-                },
-                {
-                  name: "LinkedIn",
-                  href: "https://www.linkedin.com/in/divine-nnaji-858a53283",
-                  icon: Linkedin,
-                  color: "blue",
-                  ariaLabel: "LinkedIn"
-                },
-                {
-                  name: "GitHub",
-                  href: "https://github.com/D33yan",
-                  icon: Github,
-                  color: "slate",
-                  ariaLabel: "GitHub"
-                },
-              ].map((platform) => (
-                <a
-                  key={platform.name}
-                  href={platform.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={platform.ariaLabel}
-                  className={`group flex items-center space-x-3 hover:text-${platform.color}-400 active:text-${platform.color}-300 transition-all duration-300 active:scale-95 font-medium text-base px-6 py-4 rounded-xl hover:bg-${platform.color}-500/10 border border-transparent hover:border-${platform.color}-400/20 bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-xl`}
-                  style={{ WebkitTapHighlightColor: "transparent" }}
-                >
-                  <div
-                    className={`p-3 bg-gradient-to-r from-${platform.color}-500/20 to-${platform.color}-600/20 rounded-lg group-hover:scale-110 group-active:scale-105 transition-all duration-300 border border-${platform.color}-500/20`}
-                  >
-                    <platform.icon className="w-5 h-5" />
-                  </div>
-                  <span className="font-semibold">{platform.name}</span>
+              {/* Improved outlined social/contact buttons */}
+              <Button
+                asChild
+                variant="outline"
+                className="border-green-500/30 text-green-500 hover:bg-green-500/10 hover:border-green-400/50 active:scale-95 transition-all duration-300 font-semibold px-6 py-3 rounded-xl"
+              >
+                <a href="https://wa.me/2348106890380" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  WhatsApp
                 </a>
-              ))}
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400/50 active:scale-95 transition-all duration-300 font-semibold px-6 py-3 rounded-xl"
+              >
+                <a href="mailto:dnnaji26@gmail.com?subject=Project%20Inquiry&body=Hi%20Divine,%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer" aria-label="Email">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Email
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-pink-500/30 text-pink-400 hover:bg-pink-500/10 hover:border-pink-400/50 active:scale-95 transition-all duration-300 font-semibold px-6 py-3 rounded-xl"
+              >
+                <a href="https://www.instagram.com/callmenavie?utm_source=qr&igsh=MTZxdXh6b3doczFuMw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Instagram className="w-4 h-4 mr-2" />
+                  Instagram
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-400/50 active:scale-95 transition-all duration-300 font-semibold px-6 py-3 rounded-xl"
+              >
+                <a href="https://www.linkedin.com/in/divine-nnaji-858a53283" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-slate-500/30 text-slate-400 hover:bg-slate-500/10 hover:border-slate-400/50 active:scale-95 transition-all duration-300 font-semibold px-6 py-3 rounded-xl"
+              >
+                <a href="https://github.com/D33yan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Github className="w-4 h-4 mr-2" />
+                  GitHub
+                </a>
+              </Button>
             </TouchOptimizedList>
           </div>
         </MobileOptimizedSection>
@@ -140,8 +137,17 @@ export function Contact({ isMobile }: ContactProps) {
               <a href="#" className="hover:text-slate-400 transition-colors duration-300">Terms of Service</a>
               <a href="#" className="hover:text-slate-400 transition-colors duration-300">Cookie Policy</a>
             </div>
-            <div className="flex justify-center">
-              <a href="#home" aria-label="Back to top" className="inline-block px-4 py-2 rounded-full bg-cyan-500 text-white font-semibold hover:bg-cyan-600 transition-all duration-300 font-sans">Back to top</a>
+            <div className="flex justify-center mt-4">
+              <a
+                href="#home"
+                aria-label="Back to top"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white font-bold text-base md:text-lg shadow-lg hover:from-cyan-600 hover:to-purple-600 hover:shadow-2xl hover:scale-105 active:scale-100 transition-all duration-300 font-sans focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2"
+              >
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="-ml-1">
+                  <path d="M12 19V5m0 0l-7 7m7-7l7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Back to top
+              </a>
             </div>
           </div>
         </MobileOptimizedSection>
