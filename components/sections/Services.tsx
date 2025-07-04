@@ -36,7 +36,7 @@ export function Services({ isMobile, services }: ServicesProps) {
             <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 text-purple-400 dark:text-purple-300 text-sm font-semibold rounded-full border border-purple-500/20 dark:border-purple-400/20 mb-6">
               What I Do
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
+            <h2 className="section-title gradient-navie-text text-[hsl(var(--foreground))] dark:gradient-navie-text">
               Services
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-balance leading-relaxed">

@@ -243,7 +243,7 @@ export function ContactForm() {
   }
 
   return (
-    <Card className="bg-slate-900/30 dark:bg-slate-900/30 light:bg-white/95 light:shadow-2xl light:shadow-[rgba(0,0,0,0.08)] border-white/10 dark:border-white/10 light:border-slate-200/80 backdrop-blur-xl transition-colors duration-700">
+    <Card className="bg-white dark:bg-slate-900/30 border-slate-200 dark:border-white/10 shadow-xl backdrop-blur-xl transition-colors duration-700">
       <CardContent className="p-8">
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           {/* Name and Email Row */}
@@ -252,7 +252,7 @@ export function ContactForm() {
             <div className="space-y-2">
               <label
                 htmlFor="name"
-                className="block text-sm font-bold text-slate-300 dark:text-slate-300 light:text-slate-800 transition-colors duration-700"
+                className="block text-sm font-bold text-slate-900 dark:text-slate-300 transition-colors duration-700"
               >
                 Full Name *
               </label>
@@ -262,7 +262,7 @@ export function ContactForm() {
                     className={`w-4 h-4 transition-colors duration-300 ${
                       focusedField === "name" || formData.name
                         ? "text-indigo-500"
-                        : "text-slate-500 dark:text-slate-500 light:text-slate-500"
+                        : "text-slate-400 dark:text-slate-500"
                     }`}
                   />
                 </div>
@@ -274,10 +274,10 @@ export function ContactForm() {
                   onFocus={() => setFocusedField("name")}
                   onBlur={() => setFocusedField(null)}
                   disabled={submissionState.isSubmitting}
-                  className={`w-full pl-10 pr-4 py-3 bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50/80 border rounded-xl text-white dark:text-white light:text-slate-800 placeholder-slate-500 dark:placeholder-slate-500 light:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
+                  className={`w-full pl-10 pr-4 py-3 bg-white dark:bg-slate-800/50 border rounded-xl text-slate-900 dark:text-white placeholder-white dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
                     errors.name
                       ? "border-red-500/50 focus:ring-red-500/50 focus:border-red-500/50"
-                      : "border-white/10 dark:border-white/10 light:border-slate-300/60 hover:border-white/20 dark:hover:border-white/20 light:hover:border-slate-400/80"
+                      : "border-white dark:border-white/10 hover:border-white dark:hover:border-white/20"
                   }`}
                   placeholder="Enter your full name"
                 />
@@ -294,7 +294,7 @@ export function ContactForm() {
             <div className="space-y-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-slate-300 dark:text-slate-300 light:text-slate-800 transition-colors duration-700"
+                className="block text-sm font-medium text-slate-900 dark:text-slate-300 transition-colors duration-700"
               >
                 Email Address *
               </label>
@@ -304,7 +304,7 @@ export function ContactForm() {
                     className={`w-4 h-4 transition-colors duration-300 ${
                       focusedField === "email" || formData.email
                         ? "text-indigo-500"
-                        : "text-slate-500 dark:text-slate-500 light:text-slate-500"
+                        : "text-slate-400 dark:text-slate-500"
                     }`}
                   />
                 </div>
@@ -316,10 +316,10 @@ export function ContactForm() {
                   onFocus={() => setFocusedField("email")}
                   onBlur={() => setFocusedField(null)}
                   disabled={submissionState.isSubmitting}
-                  className={`w-full pl-10 pr-4 py-3 bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50/80 border rounded-xl text-white dark:text-white light:text-slate-800 placeholder-slate-500 dark:placeholder-slate-500 light:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
+                  className={`w-full pl-10 pr-4 py-3 bg-white dark:bg-slate-800/50 border rounded-xl text-slate-900 dark:text-white placeholder-white dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
                     errors.email
                       ? "border-red-500/50 focus:ring-red-500/50 focus:border-red-500/50"
-                      : "border-white/10 dark:border-white/10 light:border-slate-300/60 hover:border-white/20 dark:hover:border-white/20 light:hover:border-slate-400/80"
+                      : "border-white dark:border-white/10 hover:border-white dark:hover:border-white/20"
                   }`}
                   placeholder="your@email.com"
                 />
@@ -337,7 +337,7 @@ export function ContactForm() {
           <div className="space-y-2">
             <label
               htmlFor="company"
-              className="block text-sm font-medium text-slate-300 dark:text-slate-300 light:text-slate-800 transition-colors duration-700"
+              className="block text-sm font-medium text-slate-900 dark:text-slate-300 transition-colors duration-700"
             >
               Company / Organization
             </label>
@@ -359,7 +359,7 @@ export function ContactForm() {
                 onFocus={() => setFocusedField("company")}
                 onBlur={() => setFocusedField(null)}
                 disabled={submissionState.isSubmitting}
-                className="w-full pl-10 pr-4 py-3 bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50/80 border border-white/10 dark:border-white/10 light:border-slate-300/60 rounded-xl text-white dark:text-white light:text-slate-800 placeholder-slate-500 dark:placeholder-slate-500 light:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 hover:border-white/20 dark:hover:border-white/20 light:hover:border-slate-400/80"
+                className="w-full pl-10 pr-4 py-3 bg-white dark:bg-slate-800/50 border rounded-xl text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed border-slate-200 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/20"
                 placeholder="Your company name (optional)"
               />
             </div>
@@ -371,7 +371,7 @@ export function ContactForm() {
             <div className="space-y-2">
               <label
                 htmlFor="project"
-                className="block text-sm font-medium text-slate-300 dark:text-slate-300 light:text-slate-800 transition-colors duration-700"
+                className="block text-sm font-medium text-slate-900 dark:text-slate-300 transition-colors duration-700"
               >
                 Project Type
               </label>
@@ -382,13 +382,11 @@ export function ContactForm() {
                 onFocus={() => setFocusedField("project")}
                 onBlur={() => setFocusedField(null)}
                 disabled={submissionState.isSubmitting}
-                className="w-full px-4 py-3 bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50/80 border border-white/10 dark:border-white/10 light:border-slate-300/60 rounded-xl text-white dark:text-white light:text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 hover:border-white/20 dark:hover:border-white/20 light:hover:border-slate-400/80"
+                className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-white/10 rounded-xl text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 hover:border-slate-400 dark:hover:border-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <option value="" className="bg-slate-800 dark:bg-slate-800 light:bg-white">
-                  Select project type
-                </option>
+                <option value="" className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white">Select project type</option>
                 {projectTypes.map((type) => (
-                  <option key={type} value={type} className="bg-slate-800 dark:bg-slate-800 light:bg-white">
+                  <option key={type} value={type} className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white">
                     {type}
                   </option>
                 ))}
@@ -400,7 +398,7 @@ export function ContactForm() {
           <div className="space-y-2">
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-slate-300 dark:text-slate-300 light:text-slate-800 transition-colors duration-700"
+              className="block text-sm font-medium text-slate-900 dark:text-slate-300 transition-colors duration-700"
             >
               Project Details *
             </label>
@@ -422,10 +420,10 @@ export function ContactForm() {
                 onFocus={() => setFocusedField("message")}
                 onBlur={() => setFocusedField(null)}
                 disabled={submissionState.isSubmitting}
-                className={`w-full pl-10 pr-4 py-3 bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50/80 border rounded-xl text-white dark:text-white light:text-slate-800 placeholder-slate-500 dark:placeholder-slate-500 light:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 resize-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                className={`w-full pl-10 pr-4 py-3 bg-white dark:bg-slate-800/50 border rounded-xl text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
                   errors.message
                     ? "border-red-500/50 focus:ring-red-500/50 focus:border-red-500/50"
-                    : "border-white/10 dark:border-white/10 light:border-slate-300/60 hover:border-white/20 dark:hover:border-white/20 light:hover:border-slate-400/80"
+                    : "border-slate-200 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/20"
                 }`}
                 placeholder="Tell me about your project goals, timeline, and any specific requirements..."
               />
