@@ -57,9 +57,8 @@ export function Navigation({
               {[
                 "Home",
                 "About",
-                "Skills",
-                "Services",
                 "Work",
+                "Skills",
                 "Resume",
                 "Contact",
               ].map((item, index) => (
@@ -125,9 +124,8 @@ export function Navigation({
             {[
               "Home",
               "About",
-              "Skills",
-              "Services",
               "Work",
+              "Skills",
               "Resume",
               "Contact",
             ].map((item, index) => (

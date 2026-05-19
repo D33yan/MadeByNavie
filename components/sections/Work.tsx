@@ -25,44 +25,36 @@ export function Work({ isMobile, projects }: WorkProps) {
   // Only use the five recently updated projects, with icons and recruiter-friendly order
   const allProjects = [
     {
-      title: 'E-commerce Website Template',
-      type: 'Fullstack Template',
+      title: 'AmyFabric',
+      type: 'Website Template',
       liveDemo: 'https://afabric-ecommercestore.vercel.app/',
       github: 'https://github.com/D33yan/afabric-ecommercestore',
-      description: 'A robust, fullstack e-commerce template featuring product listings, shopping cart, and secure checkout. Built with scalability and performance in mind, this template is ideal for launching modern online stores quickly and efficiently.',
+      description: 'A modern, responsive website template featuring clean design and smooth interactions. Built with Next.js and Tailwind CSS for optimal performance and developer experience.',
       icon: ShoppingCart
     },
     {
-      title: 'School Academic Journal Website',
-      type: 'Academic/School Platform',
+      title: 'Acadexpub',
+      type: 'Academic Journal Platform',
       liveDemo: 'https://next-academic-journal.vercel.app/',
       github: 'https://github.com/D33yan/next-academic-journal',
-      description: 'A digital platform for managing and publishing academic journals. Supports article submissions, peer review, and editorial workflows. Designed for educational institutions seeking a streamlined, user-friendly journal management system.',
+      description: 'A school website journal platform for publishing academic research and student publications. Supports article submissions, peer review, and editorial workflows for educational institutions.',
       icon: Book
     },
     {
-      title: 'AI Typhoid Checker',
-      type: 'AI/Health Tool',
+      title: 'TyphoidGuard',
+      type: 'AI/ML Health Tool',
       liveDemo: 'https://typhoidchecker.vercel.app',
       github: 'https://github.com/D33yan/typhoidchecker',
-      description: 'An AI-powered web tool that helps users assess their risk of typhoid fever based on symptoms and risk factors. Utilizes intelligent algorithms to provide instant, user-friendly health guidance and recommendations. Built for accessibility and ease of use.',
+      description: 'AI-powered typhoid prediction system achieving 98% accuracy using advanced machine learning models. Helps users assess health risks based on symptoms and provides personalized recommendations.',
       icon: Brain
     },
     {
-      title: 'Fitness Tracker',
-      type: 'Frontend Web App',
+      title: 'FitTrack',
+      type: 'Fitness Application',
       liveDemo: 'https://fitness-tracker-one-xi.vercel.app/',
       github: 'https://github.com/D33yan/fitness-tracker',
-      description: 'A modern fitness tracking application designed to help users monitor workouts, set goals, and visualize progress. Features an intuitive UI, responsive design, and interactive charts for a seamless fitness experience.',
+      description: 'Comprehensive fitness tracking platform with workout planning, goal setting, and progress visualization. Features an intuitive UI with interactive charts for a seamless fitness experience.',
       icon: BarChart2
-    },
-    {
-      title: 'Business Landing Page',
-      type: 'Landing Page',
-      liveDemo: 'https://bigfx-tradingacademy.vercel.app/',
-      github: 'https://github.com/D33yan/bigfx-tradingacademy',
-      description: 'A high-converting business landing page for Big FX Trading Academy. Showcases services, testimonials, and calls-to-action with a clean, professional design. Optimized for lead generation and brand credibility.',
-      icon: Briefcase
     }
   ];
 
