@@ -26,7 +26,7 @@ import { Navigation } from "@/components/layout/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
-import { Services } from "@/components/sections/Services";
+
 import { Work } from "@/components/sections/Work";
 import { Contact } from "@/components/sections/Contact";
 import { Resume } from "@/components/sections/Resume";
@@ -66,9 +66,8 @@ export default function Portfolio() {
       const sections = [
         "home",
         "about",
-        "skills",
-        "services",
         "work",
+        "skills",
         "resume",
         "contact",
       ];
@@ -249,70 +248,48 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-commerce Website",
-      type: "Frontend Development",
-      tech: "React, Next.js, Stripe",
-      description: "A modern e-commerce platform with seamless payment integration and responsive design",
+      title: "AmyFabric",
+      type: "Website Template",
+      tech: "Next.js, React, Tailwind CSS",
+      description: "A modern, responsive website template with sleek design and smooth interactions",
       gradient: "from-cyan-500 to-blue-600",
       icon: Code,
-      liveDemo: "https://example-ecommerce.com",
-      githubCode: "https://github.com/madebynavie/ecommerce-website",
+      liveDemo: "#",
+      githubCode: "#",
       date: "2024"
     },
     {
-      title: "Fitness Tracker",
-      type: "Frontend Development",
-      tech: "React, Next.js, Supabase",
-      description: "A comprehensive fitness tracking application with workout planning and progress analytics",
+      title: "FitTrack",
+      type: "Fitness Application",
+      tech: "Next.js, Supabase, Python",
+      description: "Comprehensive fitness tracking platform with workout planning and AI-powered progress analytics",
       gradient: "from-emerald-500 to-teal-600",
       icon: Code,
-      liveDemo: "https://fitness-tracker-one-xi.vercel.app/",
-      githubCode: "https://github.com/madebynavie/fitness-tracker",
+      liveDemo: "#",
+      githubCode: "#",
       date: "2024"
     },
     {
-      title: "SaaS Dashboard",
-      type: "UI/UX + Development",
-      tech: "Figma, React, TypeScript",
-      description: "A powerful SaaS dashboard with advanced analytics and user management features",
+      title: "TyphoidGuard",
+      type: "AI/ML Application",
+      tech: "Python, Scikit-learn, Machine Learning",
+      description: "AI-powered typhoid prediction system achieving 98% accuracy using advanced machine learning models",
       gradient: "from-purple-500 to-pink-600",
-      icon: Layers,
-      liveDemo: "https://example-saas.com",
-      githubCode: "https://github.com/madebynavie/saas-dashboard",
+      icon: Sparkles,
+      liveDemo: "#",
+      githubCode: "#",
       date: "2024"
     },
     {
-      title: "Restaurant Website",
-      type: "Full-Stack Development",
-      tech: "Next.js, CMS, Animations",
-      description: "A beautiful restaurant website with online ordering and reservation system",
+      title: "Acadexpub",
+      type: "Academic Journal Platform",
+      tech: "Next.js, Node.js, MongoDB",
+      description: "School website journal platform for publishing academic research and student publications",
       gradient: "from-orange-500 to-red-600",
       icon: Code,
-      liveDemo: "https://example-restaurant.com",
-      githubCode: "https://github.com/madebynavie/restaurant-website",
+      liveDemo: "#",
+      githubCode: "#",
       date: "2023"
-    },
-    {
-      title: "Fitness Brand Package",
-      type: "Complete Brand Identity",
-      tech: "Logo, Social Kit, Guidelines",
-      description: "Complete brand identity package including logo design, social media kit, and brand guidelines",
-      gradient: "from-indigo-500 to-purple-600",
-      icon: Brush,
-      liveDemo: "https://example-fitness.com",
-      githubCode: undefined,
-      date: "2023"
-    },
-    {
-      title: "Portfolio Website",
-      type: "Frontend Development",
-      tech: "Next.js, TypeScript, Tailwind",
-      description: "This portfolio website showcasing MadeByNavie's work and capabilities",
-      gradient: "from-slate-500 to-gray-600",
-      icon: Code,
-      liveDemo: "https://madebynavie.com",
-      githubCode: "https://github.com/madebynavie/portfolio",
-      date: "2024"
     }
   ];
 
@@ -406,9 +383,8 @@ export default function Portfolio() {
         scrollToSection={scrollToSection}
       />
       <About isMobile={isMobile} scrollToSection={scrollToSection} />
-      <Skills isMobile={isMobile} skills={skills} />
-      <Services isMobile={isMobile} services={services} />
       <Work isMobile={isMobile} projects={projects} />
+      <Skills isMobile={isMobile} skills={skills} />
       <Resume isMobile={isMobile} />
       <Contact isMobile={isMobile} />
     </div>
