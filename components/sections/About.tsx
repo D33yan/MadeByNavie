@@ -1,7 +1,7 @@
 import { MobileOptimizedSection } from "@/components/animations/mobile-optimized-section";
 import { TouchOptimizedList } from "@/components/animations/touch-optimized-list";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, ExternalLink, User, Award, Globe, MessageCircle, Instagram } from "lucide-react";
+import { Github, Linkedin, ExternalLink, User, Award, Globe, MessageCircle, Instagram, Code } from "lucide-react";
 import { NavieLogo } from "@/components/logo/navie-logo";
 
 interface AboutProps {
@@ -29,27 +29,27 @@ export function About({ isMobile, scrollToSection }: AboutProps) {
                   About Me
                 </span>
                 <h2 className="section-title gradient-navie-text bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl font-bold text-balance leading-tight">
-                  Meet <span>MadeByNavie</span>
+                  About <span>Me</span>
                 </h2>
               </div>
               <div className="space-y-6 md:space-y-8">
                 <p className="text-lg md:text-xl text-muted-foreground text-balance leading-relaxed">
-                  Hi, I'm <strong className="text-cyan-400 font-semibold">Divine Nnaji</strong>, the creative mind behind MadeByNavie. I specialize in crafting responsive web interfaces and memorable brand identities that help businesses connect with their audience.
+                  Hi, I'm <strong className="text-cyan-400 font-semibold">Divine Nnaji</strong>, a full-stack software engineer with a passion for building scalable applications and integrating AI/ML solutions. I bring together frontend excellence and robust backend architecture to create comprehensive digital solutions.
                 </p>
                 <p className="text-lg md:text-xl text-muted-foreground text-balance leading-relaxed">
-                  What sets me apart is my ability to seamlessly blend technical expertise with creative vision. I don't just build websites—I create digital experiences that tell compelling stories and drive meaningful engagement.
+                  Currently focused on data science and AI applications through my internship at NASRDA, I specialize in Python-based machine learning, automation workflows (n8n, Zapier), and building full-stack applications with Next.js and Node.js. I&apos;m driven by solving complex technical challenges and creating meaningful impact through technology.
                 </p>
                 <p className="text-lg md:text-xl text-muted-foreground text-balance leading-relaxed">
-                  Whether you need a high-converting website or a cohesive brand identity, I bring precision and creativity to every project, ensuring your digital presence stands out in today's competitive landscape.
+                  Whether building production-grade web applications, training ML models, or architecting automation workflows, I approach every project with technical precision and a commitment to delivering robust, maintainable solutions that drive real business value.
                 </p>
               </div>
 
               {/* Key Highlights */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 {[
-                  { icon: User, label: "Personal Touch", value: "Every project gets my full attention" },
-                  { icon: Award, label: "Quality Focus", value: "Excellence in every detail" },
-                  { icon: Globe, label: "Global Reach", value: "Working with clients worldwide" }
+                  { icon: User, label: "Full-Stack Expertise", value: "Frontend, backend, and AI integration" },
+                  { icon: Award, label: "Technical Excellence", value: "Production-ready code and solutions" },
+                  { icon: Globe, label: "AI/ML Focus", value: "Data science and machine learning expertise" }
                 ].map((highlight, index) => (
                   <div
                     key={highlight.label}
@@ -137,13 +137,15 @@ export function About({ isMobile, scrollToSection }: AboutProps) {
                 <div className="relative w-full h-80 md:h-96 bg-[hsl(var(--card))] border border-[hsl(var(--border))] backdrop-blur-xl shadow-lg rounded-3xl group-hover:scale-105 group-active:scale-95 transition-all duration-700 flex items-center justify-center dark:bg-gradient-to-br dark:from-slate-900/50 dark:to-slate-800/30 dark:border-slate-700/50">
                   <div className="text-center p-8">
                     <div className="mb-6 md:mb-8">
-                      <NavieLogo size="xl" variant="icon" animated={true} />
+                      <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto">
+                        <Code className="w-10 h-10 md:w-12 md:h-12 text-white" />
+                      </div>
                     </div>
                     <p className="text-[hsl(var(--foreground))] text-xl md:text-2xl font-bold mb-2 md:mb-3">
-                      MadeByNavie
+                      Divine Nnaji
                     </p>
                     <p className="text-cyan-600 text-base md:text-lg font-medium">
-                      Where Tech Meets Art
+                      Full-Stack Engineer & AI Enthusiast
                     </p>
                     <div className="mt-6 md:mt-8 flex justify-center space-x-4">
                       <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />

@@ -59,15 +59,15 @@ export function Hero({
         </div>
         {/* Main Title with fade-in/floating animation */}
         <h1 className="text-display-xl font-sans text-center mb-4 text-[hsl(var(--foreground))] dark:text-white animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-          Frontend Developer
+          Full-Stack Software Engineer
         </h1>
         {/* Tagline with accent font */}
         <div className="text-center text-lg md:text-2xl text-cyan-700 dark:text-cyan-300 font-medium mb-6 font-display animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          Building beautiful, performant, and modern web experiences.
+          Building scalable applications with AI/ML integration and modern backend architecture.
         </div>
         {/* Summary */}
         <p className="text-center text-base md:text-lg text-[hsl(var(--foreground))] dark:text-muted-foreground font-medium max-w-prose mx-auto mb-4 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          Specializing in React & Next.js | I leverage cutting-edge technologies to bring web projects to life.
+          Specializing in Next.js, Node.js, Python, and AI integration | Expertise in full-stack development, automation workflows, and data science.
         </p>
         {/* Decorative Divider */}
         <div className="flex justify-center mb-5 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>

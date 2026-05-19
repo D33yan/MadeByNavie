@@ -184,63 +184,63 @@ export function Skills({ isMobile, skills }: SkillsProps) {
       proficiency: 85,
       size: BASE_SIZE * 0.8
     },
-    // Design Tools (Outer Orbit)
+    // AI/ML (Outer Orbit)
     {
-      id: "figma",
-      name: "Figma",
-      category: "design",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-      color: "purple",
-      gradient: "from-purple-400 via-pink-500 to-red-500",
+      id: "python",
+      name: "Python",
+      category: "aiml",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      color: "blue",
+      gradient: "from-yellow-400 via-blue-500 to-indigo-600",
       orbitRadius: BASE_ORBIT * PHI * 1.9,
       orbitSpeed: 0.7,
-      technologies: ["UI/UX Design", "Prototyping", "Design Systems"],
-      description: "Collaborative interface design tool",
-      proficiency: 90,
+      technologies: ["Data Science", "Machine Learning", "Automation", "NumPy"],
+      description: "Python for data science and machine learning",
+      proficiency: 85,
       size: BASE_SIZE * 0.7
     },
     {
-      id: "illustrator",
-      name: "Adobe Illustrator",
-      category: "design",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
-      color: "yellow",
-      gradient: "from-yellow-400 via-orange-500 to-red-600",
+      id: "sklearn",
+      name: "Scikit-learn",
+      category: "aiml",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sklearn/sklearn-original.svg",
+      color: "orange",
+      gradient: "from-orange-400 via-red-500 to-pink-600",
       orbitRadius: BASE_ORBIT * PHI * 2.1,
       orbitSpeed: 0.8,
-      technologies: ["Vector Art", "Branding", "Logo Design"],
-      description: "Industry-standard vector graphics editor",
-      proficiency: 85,
+      technologies: ["Classification", "Regression", "Data Cleaning", "Feature Engineering"],
+      description: "Machine learning library for Python",
+      proficiency: 82,
       size: BASE_SIZE * 0.7
     },
+    // Automation Tools (Outer Orbit)
     {
-      id: "photoshop",
-      name: "Adobe Photoshop",
-      category: "design",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
-      color: "blue",
-      gradient: "from-blue-400 via-indigo-500 to-purple-600",
+      id: "n8n",
+      name: "n8n",
+      category: "automation",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/n8n/n8n-original.svg",
+      color: "red",
+      gradient: "from-red-400 via-pink-500 to-purple-600",
       orbitRadius: BASE_ORBIT * PHI * 2.3,
-      orbitSpeed: 0.8,
-      technologies: ["Photo Editing", "Compositing", "Retouching"],
-      description: "Industry-standard photo editing software",
-      proficiency: 85,
+      orbitSpeed: 0.6,
+      technologies: ["Workflow Automation", "API Integration", "Data Processing", "Scheduling"],
+      description: "Open-source workflow automation platform",
+      proficiency: 80,
       size: BASE_SIZE * 0.7
     },
-    // Mobile Development (Inner Orbit)
     {
-      id: "reactnative",
-      name: "React Native",
-      category: "mobile",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      color: "blue",
-      gradient: "from-blue-400 via-cyan-500 to-purple-600",
-      orbitRadius: BASE_ORBIT * PHI * 1.1,
-      orbitSpeed: 0.7,
-      technologies: ["Cross-platform", "Mobile Apps", "Expo", "Native Modules"],
-      description: "Build native mobile apps using React and JavaScript",
+      id: "zapier",
+      name: "Zapier",
+      category: "automation",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zapier/zapier-original.svg",
+      color: "orange",
+      gradient: "from-orange-400 via-yellow-500 to-red-600",
+      orbitRadius: BASE_ORBIT * PHI * 2.5,
+      orbitSpeed: 0.5,
+      technologies: ["No-code Automation", "Integrations", "Webhooks", "Scheduling"],
+      description: "Integration and automation platform",
       proficiency: 80,
-      size: BASE_SIZE * 0.8
+      size: BASE_SIZE * 0.7
     }
   ];
 
@@ -248,7 +248,8 @@ export function Skills({ isMobile, skills }: SkillsProps) {
     { id: "all", name: "All Technologies", count: techOrbits.length },
     { id: "frontend", name: "Frontend", count: techOrbits.filter(t => t.category === "frontend").length },
     { id: "backend", name: "Backend", count: techOrbits.filter(t => t.category === "backend").length },
-    { id: "mobile", name: "Mobile", count: techOrbits.filter(t => t.category === "mobile").length },
+    { id: "aiml", name: "AI/ML", count: techOrbits.filter(t => t.category === "aiml").length },
+    { id: "automation", name: "Automation", count: techOrbits.filter(t => t.category === "automation").length },
     { id: "tools", name: "Tools", count: techOrbits.filter(t => t.category === "tools").length }
   ];
 
@@ -293,13 +294,13 @@ export function Skills({ isMobile, skills }: SkillsProps) {
           <div className="section-header mb-8 md:mb-10">
             <div className="section-badge">
               <Code className="w-4 h-4 mr-2" />
-              Technology Ecosystem
+              Technical Expertise
             </div>
             <h2 className="section-title gradient-navie-text text-[hsl(var(--foreground))] dark:gradient-navie-text">
-              My Skills & Tools
+              Skills & Technologies
             </h2>
             <p className="section-subtitle text-[hsl(var(--foreground))] dark:text-muted-foreground">
-              A curated set of technologies and tools I use to build modern digital experiences
+              Full-stack development, AI/ML, automation workflows, and modern backend architecture
             </p>
           </div>
         </MobileOptimizedSection>
