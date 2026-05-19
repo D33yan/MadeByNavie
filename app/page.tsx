@@ -26,7 +26,7 @@ import { Navigation } from "@/components/layout/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
-
+import { Experience } from "@/components/sections/Experience";
 import { Work } from "@/components/sections/Work";
 import { Contact } from "@/components/sections/Contact";
 import { Resume } from "@/components/sections/Resume";
@@ -66,6 +66,7 @@ export default function Portfolio() {
       const sections = [
         "home",
         "about",
+        "experience",
         "work",
         "skills",
         "resume",
@@ -383,6 +384,7 @@ export default function Portfolio() {
         scrollToSection={scrollToSection}
       />
       <About isMobile={isMobile} scrollToSection={scrollToSection} />
+      <Experience isMobile={isMobile} />
       <Work isMobile={isMobile} projects={projects} />
       <Skills isMobile={isMobile} skills={skills} />
       <Resume isMobile={isMobile} />

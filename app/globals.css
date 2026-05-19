@@ -158,6 +158,71 @@
   }
 }
 
+/* Electric Teal Accent Animations */
+@keyframes teal-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3), 0 0 40px rgba(100, 255, 218, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(100, 255, 218, 0.5), 0 0 80px rgba(100, 255, 218, 0.25);
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes magnetic-pull {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(var(--mx), var(--my));
+  }
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes text-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* MadeByNavie Brand Animation Classes */
 .animate-fade-in-up {
   animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -197,6 +262,29 @@
   animation: navie-pulse-glow 4s ease-in-out infinite;
 }
 
+.animate-teal-glow {
+  animation: teal-glow 3s ease-in-out infinite;
+}
+
+.animate-gradient-flow {
+  animation: gradient-flow 8s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(100, 255, 218, 0.2) 20%, rgba(100, 255, 218, 0.4) 50%, transparent 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 3s infinite;
+}
+
+.animate-text-gradient {
+  background-size: 200% 200%;
+  animation: text-gradient 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* MadeByNavie Brand Gradients - Accessibility Enhanced */
 .gradient-navie-primary {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
@@ -226,6 +314,29 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.gradient-teal-primary {
+  background: linear-gradient(135deg, #64ffda 0%, #00d9ff 100%);
+}
+
+.gradient-teal-text {
+  background: linear-gradient(135deg, #64ffda 0%, #00d9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-teal-accent {
+  background: linear-gradient(135deg, #64ffda 0%, #a855f7 100%);
+}
+
+.glow-teal {
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3), 0 0 40px rgba(100, 255, 218, 0.15);
+}
+
+.glow-teal-lg {
+  box-shadow: 0 0 40px rgba(100, 255, 218, 0.4), 0 0 80px rgba(100, 255, 218, 0.2);
 }
 
 /* MadeByNavie Professional Transitions */

@@ -57,6 +57,7 @@ export function Navigation({
               {[
                 "Home",
                 "About",
+                "Experience",
                 "Work",
                 "Skills",
                 "Resume",
@@ -124,6 +125,7 @@ export function Navigation({
             {[
               "Home",
               "About",
+              "Experience",
               "Work",
               "Skills",
               "Resume",
